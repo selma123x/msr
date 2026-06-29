@@ -117,7 +117,7 @@ nav {
   display: flex; align-items: center; gap: 8px;
   font-size: 0.75rem; color: rgba(255,255,255,0.55);
 }
-.hero-address::before { content: '📍'; }
+.hero-address::before { content: '<svg style="width:13px;height:13px;fill:currentColor;vertical-align:middle;margin-right:4px" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>'; }
 .hero-social {
   position: absolute; right: 40px; bottom: 40px; z-index: 1;
   display: flex; gap: 10px;
@@ -210,7 +210,7 @@ nav {
 .services-grid {
   max-width: 1200px; margin: 0 auto;
   display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 24px; position: relative; z-index: 1;
+  gap: 20px; position: relative; z-index: 1;
 }
 .service-card {
   background: #fff; padding: 28px 22px 24px;
@@ -413,7 +413,7 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .about-inner { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -425,7 +425,7 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
   .counters-section, .testimonial-section, .logos-section,
   .cta-section { padding: 50px 20px; }
   footer { padding: 50px 20px 24px; }
-  .services-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; gap: 14px; }
   .why-grid { grid-template-columns: 1fr; }
   .counters-inner { grid-template-columns: repeat(2,1fr); }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
@@ -440,7 +440,7 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="topbar-left">
-    <span>📍 Harrow &amp; Greater London</span>
+    <span><svg style="width:13px;height:13px;fill:currentColor;vertical-align:middle;margin-right:4px" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Harrow &amp; Greater London</span>
   </div>
   <div class="topbar-right">
     <span>24/7 Emergency: <a href="tel:+447533442466">07533 442466</a></span>
@@ -508,7 +508,7 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
       <p>We develop and deliver best-in-class flat roofing services across London with our highly skilled and trained tradespeople. Our team includes experts in waterproofing, torch-on felt, EPDM membrane, GRP fibreglass, and liquid roofing systems. Our professional approach to quality makes us the best choice in London for all flat roofing services — residential, commercial, and industrial.</p>
       <p>We only specify industry-leading materials including Radmat, BauderTEC, and Danosa — the same brands used on London's best-built roofs — backed by full manufacturer warranties.</p>
       <div class="emergency-box">
-        <div class="em-icon">📞</div>
+        <div class="em-icon"><svg style="width:22px;height:22px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
         <div>
           <div class="em-label">24/7 Emergency Roofing Service</div>
           <div class="em-num"><a href="tel:+447533442466">+44 7533 442466</a></div>
@@ -525,7 +525,7 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
         <textarea name="message" placeholder="Tell us about your roofing needs..." required></textarea>
         <button type="submit">Send Request</button>
       </form>
-      <div class="form-success" id="formSuccess">✓ Thank you! We'll be in touch within 24 hours.</div>
+      <div class="form-success" id="formSuccess"> Thank you! We'll be in touch within 24 hours.</div>
       <div class="form-note">* Required fields. We respond within 24 hours.</div>
     </div>
   </div>
@@ -711,12 +711,12 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
       <p style="font-size:0.88rem;color:#777;margin-top:10px;max-width:620px;line-height:1.7">We understand your needs and work hard to deliver your requirements with complete satisfaction and zero compromise on quality.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card"><div class="why-icon">🏆</div><h4>Qualified Experts</h4><p>Fully trained roofers with hands-on experience in all major flat roofing systems. We understand your issues and design the best solution.</p></div>
-      <div class="why-card"><div class="why-icon">📅</div><h4>Flexible Schedule</h4><p>We understand your working hours and offer flexible scheduling so you can get our services at a time that suits you best.</p></div>
-      <div class="why-card"><div class="why-icon">⭐</div><h4>Workmanship Quality</h4><p>It takes exactly the same effort to do it right or wrong — so we work hard on procedure and precision every single time.</p></div>
-      <div class="why-card"><div class="why-icon">💷</div><h4>Affordable Packages</h4><p>We offer competitive prices for domestic and commercial projects alike so everyone can access quality flat roofing services.</p></div>
-      <div class="why-card"><div class="why-icon">🛡️</div><h4>Fully Insured & Guaranteed</h4><p>All work is backed by full public liability insurance and our workmanship guarantee, giving you complete peace of mind.</p></div>
-      <div class="why-card"><div class="why-icon">🎁</div><h4>Free Site Surveys</h4><p>We offer free no-obligation site surveys and written quotes — so you know exactly what you're getting before any work begins.</p></div>
+      <div class="why-card"><div class="why-icon"><svg style="width:24px;height:24px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg></div><h4>Qualified Experts</h4><p>Fully trained roofers with hands-on experience in all major flat roofing systems. We understand your issues and design the best solution.</p></div>
+      <div class="why-card"><div class="why-icon"><svg style="width:24px;height:24px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h4>Flexible Schedule</h4><p>We understand your working hours and offer flexible scheduling so you can get our services at a time that suits you best.</p></div>
+      <div class="why-card"><div class="why-icon"><svg style="width:24px;height:24px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h4>Workmanship Quality</h4><p>It takes exactly the same effort to do it right or wrong — so we work hard on procedure and precision every single time.</p></div>
+      <div class="why-card"><div class="why-icon"><svg style="width:24px;height:24px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4>Affordable Packages</h4><p>We offer competitive prices for domestic and commercial projects alike so everyone can access quality flat roofing services.</p></div>
+      <div class="why-card"><div class="why-icon"><svg style="width:24px;height:24px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Fully Insured & Guaranteed</h4><p>All work is backed by full public liability insurance and our workmanship guarantee, giving you complete peace of mind.</p></div>
+      <div class="why-card"><div class="why-icon"><svg style="width:24px;height:24px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div><h4>Free Site Surveys</h4><p>We offer free no-obligation site surveys and written quotes — so you know exactly what you're getting before any work begins.</p></div>
     </div>
   </div>
 </div>
@@ -739,7 +739,7 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
     <div class="section-tag" style="margin-bottom:24px">What Our Clients Say</div>
     <span class="test-quote-mark">"</span>
     <blockquote>They are professional and experts at their job. Really happy with the flat roof they installed on our commercial unit in Harrow. The team were clean, on time, and the finish is excellent. Highly recommend Master Roof Solutions to anyone.</blockquote>
-    <div class="test-stars">★ ★ ★ ★ ★</div>
+    <div class="test-stars">    </div>
     <div class="test-author">David Okafor</div>
     <div class="test-role">Property Manager, Harrow</div>
   </div>
@@ -824,10 +824,10 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
     <div class="footer-col">
       <h4>Contact Info</h4>
       <ul class="contact-list">
-        <li><span class="ci-icon">📍</span><span class="ci-text">Harrow, London — covering all of Greater London</span></li>
-        <li><span class="ci-icon">📞</span><span class="ci-text"><a href="tel:+447533442466">+44 7533 442466</a></span></li>
-        <li><span class="ci-icon">✉️</span><span class="ci-text"><a href="mailto:info@masterroofsolutions.co.uk">info@masterroofsolutions.co.uk</a></span></li>
-        <li><span class="ci-icon">🕐</span><span class="ci-text">24/7 Emergency Call-Out Available</span></li>
+        <li><span class="ci-icon"><svg style="width:13px;height:13px;fill:currentColor;vertical-align:middle;margin-right:4px" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span><span class="ci-text">Harrow, London — covering all of Greater London</span></li>
+        <li><span class="ci-icon"><svg style="width:22px;height:22px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span class="ci-text"><a href="tel:+447533442466">+44 7533 442466</a></span></li>
+        <li><span class="ci-icon"><svg style="width:14px;height:14px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:2px" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span><span class="ci-text"><a href="mailto:info@masterroofsolutions.co.uk">info@masterroofsolutions.co.uk</a></span></li>
+        <li><span class="ci-icon"><svg style="width:14px;height:14px;stroke:#CC1F1F;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:2px" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span class="ci-text">24/7 Emergency Call-Out Available</span></li>
       </ul>
     </div>
   </div>

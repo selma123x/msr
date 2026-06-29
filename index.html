@@ -434,44 +434,19 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
   .footer-bottom { flex-direction: column; text-align: center; }
 }
 
-
-/* SERVICE CARDS - full image with overlay text */
-.service-card {
-  position: relative;
-  height: 220px;
-  overflow: hidden;
-  cursor: pointer;
-  background: #111;
-}
-.service-card:hover { transform: none; box-shadow: none; border-bottom: none; }
+/* SERVICE CARD IMAGES */
 .svc-img {
-  position: absolute; inset: 0;
+  width: 100%; height: 160px;
   background-size: cover; background-position: center;
-  transition: transform 0.4s ease;
-}
-.service-card:hover .svc-img { transform: scale(1.06); }
-.svc-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.1) 100%);
-  transition: background 0.3s;
-}
-.service-card:hover .svc-overlay {
-  background: linear-gradient(to top, rgba(180,20,20,0.85) 0%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.15) 100%);
-}
-.svc-text {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  padding: 16px;
-}
-.svc-num {
-  font-size: 0.62rem; font-weight: 700; color: #CC1F1F;
-  letter-spacing: 0.14em; margin-bottom: 4px;
+  position: relative;
   display: block;
 }
-.service-card:hover .svc-num { color: #ff6b6b; }
-.service-card h3 {
-  font-size: 0.88rem; font-weight: 700;
-  color: #fff; line-height: 1.25; margin: 0;
+.svc-img::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.4));
 }
+.svc-body { padding: 18px 20px 20px; }
 </style>
 </head>
 <body>
@@ -577,135 +552,8 @@ footer { background: #0a0a0a; color: rgba(255,255,255,0.55); padding: 60px 40px 
     <h2>Our Flat Roofing Services</h2>
     <p>From new installations to emergency leak repairs — we handle every aspect of flat roofing for homes and businesses across London.</p>
   </div>
-      <div class="services-grid">
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_01_flat-roof-installation.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">01.</span>
-        <h3>Flat Roof Installation</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_02_new-flat-roofs.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">02.</span>
-        <h3>New Flat Roofs</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_03_flat-roof-repairs.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">03.</span>
-        <h3>Flat Roof Repairs</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_04_flat-roof-repairs-new.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">04.</span>
-        <h3>Flat Roof Repairs & New</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_05_flat-roof-inspections.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">05.</span>
-        <h3>Flat Roof Inspections</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_06_flat-roof-maintenance.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">06.</span>
-        <h3>Flat Roof Maintenance</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_07_waterproofing-solutions.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">07.</span>
-        <h3>Waterproofing Solutions</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_08_torch-on-roofing.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">08.</span>
-        <h3>Torch-On Roofing</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_09_liquid-roofing.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">09.</span>
-        <h3>Liquid Roofing Systems</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_10_roof-coatings.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">10.</span>
-        <h3>Roof Coatings</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_11_roof-waterproofing.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">11.</span>
-        <h3>Roof Waterproofing</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_12_leak-detection.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">12.</span>
-        <h3>Leak Detection</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_13_flashing-installation.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">13.</span>
-        <h3>Flashing Installation</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_14_roof-drain.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">14.</span>
-        <h3>Roof Drain Installation</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_15_roof-restoration.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">15.</span>
-        <h3>Roof Restoration</h3>
-      </div>
-    </div>
-    <div class="service-card">
-      <div class="svc-img" style="background-image:url('https://raw.githubusercontent.com/selma123x/msr/main/images/svc_16_commercial-residential.jpg')"></div>
-      <div class="svc-overlay"></div>
-      <div class="svc-text">
-        <span class="svc-num">16.</span>
-        <h3>Commercial & Residential</h3>
-      </div>
-    </div>
+      <div style="max-width:1200px;margin:0 auto;position:relative;z-index:1;">
+    <img src="https://raw.githubusercontent.com/selma123x/msr/main/images/services-grid.jpg" alt="Master Roof Solutions Services" style="width:100%;display:block;border-radius:2px;"/>
   </div>
 
 </div>

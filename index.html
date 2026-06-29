@@ -17,11 +17,14 @@ body { font-family: 'Poppins', sans-serif; color: #333; }
 /* TOP BAR */
 .topbar {
   background: #1a1a2e; color: #ccc;
-  font-size: 0.72rem; padding: 6px 40px;
+  font-size: 0.72rem; padding: 7px 40px;
   display: flex; justify-content: space-between; align-items: center;
+  white-space: nowrap; overflow: hidden;
 }
 .topbar a { color: #f5c518; text-decoration: none; }
-.topbar-right { display: flex; gap: 16px; }
+.topbar-left { display: flex; align-items: center; gap: 6px; }
+.topbar-right { display: flex; align-items: center; gap: 16px; }
+.topbar-sep { color: rgba(255,255,255,0.2); }
 
 /* NAV */
 nav {
@@ -417,8 +420,7 @@ footer { background: #0e0e1a; color: rgba(255,255,255,0.55); padding: 60px 40px 
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
   .nav-links { display: none; }
-  .topbar { padding: 6px 20px; font-size: 0.65rem; }
-  .topbar-right { display: none; }
+  .topbar { display: none; }
   .about-section, .services-section, .why-section,
   .counters-section, .testimonial-section, .logos-section,
   .cta-section { padding: 50px 20px; }
@@ -437,10 +439,12 @@ footer { background: #0e0e1a; color: rgba(255,255,255,0.55); padding: 60px 40px 
 
 <!-- TOP BAR -->
 <div class="topbar">
-  <span>📍 Harrow, London &nbsp;|&nbsp; Serving all of Greater London</span>
+  <div class="topbar-left">
+    <span>📍 Harrow &amp; Greater London</span>
+  </div>
   <div class="topbar-right">
     <span>24/7 Emergency: <a href="tel:+447533442466">07533 442466</a></span>
-    <span>|</span>
+    <span class="topbar-sep">|</span>
     <a href="mailto:info@masterroofsolutions.co.uk">info@masterroofsolutions.co.uk</a>
   </div>
 </div>
